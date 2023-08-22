@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Restaurant Inventory System</string>
+
+    <string name="nav_open">Drawer Open</string>
+    <string name="nav_close">Drawer Closed</string>
+
+    <string-array name="Products_array">
+        <item>Eggs</item>
+        <item>Milk</item>
+        <item>Plastic Gloves</item>
+        <item>Straws</item>
+        <item>Oil</item>
+    </string-array>
+
+    <string-array name="Product_type">
+        <item>Kitchen</item>
+        <item>Bar</item>
+        <item>Utilities</item>
+    </string-array>
+
+    <string-array name="data_type">
+        <item>Items Restocked</item>
+        <item>Items Used</item>
+        <item>Money Spent</item>
+    </string-array>
+</resources>

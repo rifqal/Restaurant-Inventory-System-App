@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home Page"
+        />
+
+    <item
+        android:id="@+id/navItems"
+        android:icon="@drawable/productlistlight"
+        android:title="Home Page"
+        />
+
+    <item
+        android:id="@+id/navStock"
+        android:icon="@drawable/stockcountlight"
+        android:title="Home Page"
+        />
+
+    <item
+        android:id="@+id/navLogs"
+        android:icon="@drawable/dailylogslight"
+        android:title="Home Page"
+        />
+
+    <item
+        android:id="@+id/navStats"
+        android:icon="@drawable/statisticslight"
+        android:title="Home Page"
+        />
+
+    <item
+        android:id="@+id/navSupp"
+        android:icon="@drawable/vendordetailslight"
+        android:title="Home Page"
+        />
+
+</menu>

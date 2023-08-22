@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_new"
+    tools:context=".stockCount.StockCountActivity">
+
+    <TextView
+        android:id="@+id/txtStockCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="667dp"
+        android:text="Restock"
+        android:textColor="@color/dark_grey"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/stockCountIcon"
+        android:layout_width="45dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginBottom="650dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/restock_dark" />
+
+    <TextView
+        android:id="@+id/txtProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="591dp"
+        android:text="Product"
+        android:textColor="@color/dark_grey"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerProduct"
+        android:layout_width="409dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginBottom="559dp"
+        android:background="@color/dark_grey"
+        android:entries="@array/Products_array"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtQuantity"
+        android:layout_width="359dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="473dp"
+        android:background="@color/grey"
+        android:backgroundTint="@color/dark_grey"
+        android:ems="10"
+        android:hint=" Insert Number"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtExpiryDate"
+        android:layout_width="358dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="386dp"
+        android:background="@color/dark_grey"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="274dp"
+        android:layout_marginBottom="522dp"
+        android:text="Quantity (Packs)"
+        android:textColor="@color/dark_grey"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtExpiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="441dp"
+        android:text="Expiry Date (If applicable)"
+        android:textColor="@color/dark_grey"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnRestock"
+        android:layout_width="261dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="656dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/dark_grey"
+        android:text="Restock"
+        android:textAllCaps="false"
+        android:textColor="@color/white_new"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
